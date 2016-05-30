@@ -1,0 +1,19 @@
+package com.dagong.mapper;
+
+import com.dagong.pojo.User;
+
+public interface UserMapper {
+    int deleteByPrimaryKey(String id);
+
+    int insert(User record);
+
+    int insertSelective(User record);
+
+    User selectByPrimaryKey(String id);
+
+    User selectByOpenId(String id);
+
+    int updateByPrimaryKeySelective(User record);
+
+    int updateByPrimaryKey(User record);
+}
